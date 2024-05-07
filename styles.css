@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: rgb(80, 141, 141);
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.header {
+    grid-column: 2;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 2fr;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.header-bottom-left {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.profile-icon-bottom {
+    grid-row: 1 / span 2;
+}
+
+.header-bottom-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content {
+    grid-column: 2;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.content-project {
+    grid-column: 1 / 3;
+    grid-row: 1 / span 2;
+}
+
+.content-project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.project-button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content-anouncements {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.content-trending {
+    grid-column: 3;
+    grid-row: 2;
+}
