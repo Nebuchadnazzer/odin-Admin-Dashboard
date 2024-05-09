@@ -5,7 +5,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1.5fr 4fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
@@ -62,31 +62,120 @@ body {
 
 .header {
     grid-column: 2;
+    margin: 10px 20px 10px 20px;
 }
 
 .header-top {
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr 2fr;
+    grid-template-columns: 4fr auto;
+}
+
+.header-top-right {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: end;
+}
+
+.notify, .profile-icon-top, .profile-name-top {
+    align-self: center;
+}
+
+.profile-icon-top {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-top-left {
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.input-search-container {
+    width: 100%;
+    padding-left: 5px;
+}
+
+.search-button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+}
+
+.search-input {
+    border: none;
+    border-radius: 20px;
+    background-color: #e0e7ff;
+    padding: 10px;
+    width: 80%;
+    height: 23px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.button-search-container {
+    align-self: center;
 }
 
 .header-bottom {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr auto;
 }
 
 .header-bottom-left {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 2fr;
+    justify-self: start;
 }
 
 .profile-icon-bottom {
     grid-row: 1 / span 2;
+    justify-self: start;
+}
+
+.profile-intro {
+    font-size: 0.8rem;
+    align-self: end;
+}
+
+.profile-name-bottom {
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-self: start;
 }
 
 .header-bottom-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+}
+
+.header-buttons {
+    background-color: #312e81;
+    color: white;
+    padding: 8px 10px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.header-svg {
+    width: 20px;
+}
+
+.profile-icon-top {
+    width: 40px;
+}
+
+.profile-icon-bottom {
+    width: 50px;
 }
 
 .content {
