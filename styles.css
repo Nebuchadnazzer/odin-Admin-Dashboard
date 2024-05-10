@@ -197,9 +197,23 @@ body {
     grid-template-rows: repeat(3, 1fr);
 }
 
+.project-button-lower {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
 .project-button-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+/* .project-buttons {
+    width: 20px;
+    justify-self: center;
+} */
+
+.project-button-svg {
+    width: 20px;
 }
 
 .content-anouncements {
