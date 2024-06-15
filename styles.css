@@ -283,8 +283,34 @@ body {
 .content-trending {
     grid-column: 3;
     grid-row: 2;
+    margin-top: 1rem;
+}
+
+.content-trending-header {
+    margin-bottom: 1rem;
+}
+
+.content-trending-container {
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
 
 .trending-profile {
-    background-color: white;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-profile-icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-size: 40px;
+    place-self: center;
+    margin-right: 1rem;
+}
+
+.trending-profile-username {
+    align-self: end;
 }
